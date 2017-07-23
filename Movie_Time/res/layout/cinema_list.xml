@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:orientation="vertical"  
+    android:layout_width="fill_parent"  
+    android:layout_height="fill_parent"  
+   	android:background="@drawable/cinema_list">  
+   	
+	<RelativeLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="52dp" >
+    		
+		<ImageButton
+		    android:id="@+id/imageButton1"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentTop="true"
+		    android:layout_marginLeft="19dp"
+		    android:layout_marginTop="18dp"
+		    android:background="@android:color/transparent"
+		    android:src="@drawable/backspace" />
+		
+		<ImageButton
+		    android:id="@+id/imageButton2"
+		    android:layout_width="60dp"
+		    android:layout_height="50dp"
+		    android:layout_alignParentRight="true"
+		    android:layout_alignParentTop="true"
+		    android:background="@android:color/transparent"
+		    android:src="@drawable/home_icon2" />
+
+		<TextView
+		    android:id="@+id/textView1"
+		    android:layout_width="220dp"
+		    android:layout_height="wrap_content"
+		    android:layout_centerHorizontal="true"
+		    android:layout_marginTop="12dp"
+		    android:ellipsize="end"
+		    android:gravity="center"
+		    android:singleLine="true"
+		    android:textAppearance="?android:attr/textAppearanceMedium"
+		    android:textColor="#FFFFFFFF" />
+		  
+	</RelativeLayout>  
+	
+	<ListView   
+    	android:id="@id/android:list"    
+    	android:layout_width="fill_parent"    
+    	android:layout_height="0dip"    
+    	android:layout_weight="1"    
+    	android:background="#FFFFFFFF"
+        android:cacheColorHint="#00000000"
+    	android:drawSelectorOnTop="false" />  
+    	
+	<TextView   
+    	android:id="@id/android:empty"  
+    	android:layout_width="wrap_content"    
+    	android:layout_height="wrap_content" />    
+</LinearLayout>  

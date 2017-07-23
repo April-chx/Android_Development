@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Movie Time</string>
+    <string name="action_settings">Settings</string>
+    <string name="showing">正在热映</string>
+    <string name="search">搜索</string>
+    <string name="checkCinema">查 影 院</string>
+    <string name="movie_introduction">影片详情</string>
+    <string name="buy_ticket">购票</string>
+    <string name="introduction">详情</string>
+    <string name="cancel">取消</string>
+    <string name="hint">最多可选择4个座位</string>
+    <string name="ticket_price">票价：</string>
+    <string name="next">下一步</string>
+    <string name="label1">尊敬的顾客，请准确填写以下信息：</string>
+    <string name="label2">座位号：</string>
+    <string name="reservation">预订详情</string>
+    <string name="reservation2">预 订</string>
+    <string name="name">姓名：</string>
+    <string name="phone">联系电话：</string>
+    <string name="total_price">总价：</string>
+    
+</resources>

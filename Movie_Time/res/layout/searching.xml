@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:layout_width="match_parent"  
+    android:layout_height="match_parent"  
+    android:background="@drawable/cinema_list" >  
+  
+    <EditText
+        android:id="@+id/searchbox"
+        android:layout_width="240dp"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="false"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="8dp"
+        android:background="#FFFFFFFF"
+        android:drawableLeft="@drawable/search"
+        android:drawablePadding="5dp"
+        android:hint="影片/影院"
+        android:singleLine="true" >
+  
+        <requestFocus />  
+    </EditText>
+      
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_below="@id/searchbox"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFFFF"
+        android:cacheColorHint="#00000000"
+        android:paddingLeft="5dp" >
+  
+    </ListView>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="13dp"
+        android:background="@android:color/transparent"
+        android:text="@string/cancel"
+        android:textColor="#FFFFFFFF"
+        android:textSize="18dp" />
+   
+</RelativeLayout> 

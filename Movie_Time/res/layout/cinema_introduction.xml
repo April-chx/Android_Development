@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/cinema_introduction">
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="190dp"
+        android:layout_weight="0" >
+
+        <ImageButton
+            android:id="@+id/imageButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="17dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/backspace" />
+        
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@android:color/transparent"
+            android:src="@drawable/home_icon2" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="11dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#FFFFFFFF" />
+        
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="90dp"
+            android:layout_height="105dp"
+            android:layout_alignLeft="@+id/imageButton1"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="17dp"
+            android:src="@drawable/cinema" />
+        
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="175dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="82dp"
+            android:layout_toRightOf="@+id/imageView1"
+            android:textColor="#FFFFFFFF" />
+    </RelativeLayout>
+    
+        <TabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:layout_weight="0"
+        android:background="#FFFFFFFF" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:orientation="vertical" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="bottom|center_vertical" >
+
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</LinearLayout>
